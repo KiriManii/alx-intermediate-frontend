@@ -1,0 +1,47 @@
+<!-- 
+FILE PATH: alx-intermediate-frontend/0x02-tailwind-css/5-gridflex_index.html
+This file combines CSS Grid and Flexbox for complex layouts
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-100 min-h-screen">
+    <header class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-4">
+        <h1 class="text-4xl font-bold text-center">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4 min-h-screen max-w-7xl mx-auto">
+        <section class="lg:col-span-2 flex gap-4">
+            <div class="w-1/2 bg-red-200 p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-3 text-red-800">Flexbox Item 1</h2>
+                <p class="text-red-700">This content uses Flexbox within a Grid area for optimal layout control.</p>
+            </div>
+            <div class="w-1/2 bg-red-400 text-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-3">Flexbox Item 2</h2>
+                <p class="text-red-100">Combining Grid and Flexbox provides the best of both layout systems.</p>
+            </div>
+        </section>
+        <aside class="bg-green-200 p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-3 text-green-800">Sidebar</h2>
+            <p class="text-green-700">This sidebar uses CSS Grid positioning and maintains proper responsive behavior.</p>
+        </aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-6 rounded-lg shadow-lg text-center max-w-7xl mx-auto">
+        <p class="text-lg">&copy; 2025 John Doe's Blog</p>
+    </footer>
+</body>
+</html>

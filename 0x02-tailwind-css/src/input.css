@@ -1,0 +1,8 @@
+/* 
+ * FILE PATH: alx-intermediate-frontend/0x02-tailwind-css/src/input.css
+ * This file contains the Tailwind CSS directives
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

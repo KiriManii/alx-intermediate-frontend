@@ -1,0 +1,101 @@
+<!-- 
+FILE PATH: alx-intermediate-frontend/0x02-tailwind-css/6-imageGallery.html
+This file extends the previous layout with a responsive image gallery
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-100 min-h-screen">
+    <header class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-4">
+        <h1 class="text-4xl font-bold text-center">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4 min-h-screen max-w-7xl mx-auto">
+        <section class="lg:col-span-2 flex gap-4">
+            <div class="w-1/2 bg-red-200 p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-3 text-red-800">Flexbox Item 1</h2>
+                <p class="text-red-700">This content uses Flexbox within a Grid area for optimal layout control.</p>
+            </div>
+            <div class="w-1/2 bg-red-400 text-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-3">Flexbox Item 2</h2>
+                <p class="text-red-100">Combining Grid and Flexbox provides the best of both layout systems.</p>
+            </div>
+        </section>
+        <aside class="bg-green-200 p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-3 text-green-800">Sidebar</h2>
+            <p class="text-green-700">This sidebar uses CSS Grid positioning and maintains proper responsive behavior.</p>
+        </aside>
+    </main>
+
+    <!-- Image Gallery Section -->
+    <section class="mt-8 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Responsive Image Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Image 1 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 1</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 2</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 3</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+            
+            <!-- Image 4 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 4</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+            
+            <!-- Image 5 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-pink-400 to-red-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 5</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+            
+            <!-- Image 6 -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="aspect-square bg-gradient-to-br from-indigo-400 to-purple-600 flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Image 6</span>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-lg shadow-lg text-center max-w-7xl mx-auto">
+        <p class="text-lg">&copy; 2025 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
