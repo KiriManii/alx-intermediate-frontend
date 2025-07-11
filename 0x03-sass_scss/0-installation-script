@@ -1,0 +1,8 @@
+SASS Installation Steps:
+
+1. Checked if Node.js was installed using: node --version
+2. Installed SASS globally using: npm install -g sass@1.77.8
+3. Verified installation using: sass --version
+4. Created project directory structure:
+   - alx-intermediate-frontend/
+   - 0x03-sass_scss/
