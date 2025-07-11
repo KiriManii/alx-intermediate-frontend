@@ -1,0 +1,10 @@
+// Using nesting to style body and nested p tags
+body {
+  margin: 0px;
+  padding: 0px;
+  
+  // Nested p tag styling - this targets p tags inside body
+  p {
+    margin: 10px;
+  }
+}
